@@ -1,0 +1,60 @@
+
+/* التصميم الأساسي */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header { padding: 40px 0; }
+
+/* قسم الخدمات المتجاوب */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap; /* هذا هو السر ليصبح الموقع مناسباً للهاتف */
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.25); }
+
+/* الأزرار */
+.order-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background: #ffffff;
+    color: #764ba2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* نموذج الاتصال */
+.form-section { max-width: 500px; margin: 40px auto; background: rgba(0,0,0,0.1); padding: 20px; border-radius: 15px; }
+input, textarea { width: 90%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none; }
+button { background: #25d366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
